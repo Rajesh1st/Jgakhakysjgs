@@ -63,7 +63,7 @@ async def send_file(bot, query):
         await query.answer("⚠️ File not found!", show_alert=True)
 
 # Admin command: Add channel
-@bot.on_message(filters.command("add_channel") & filters.user("YOUR_ADMIN_ID"))
+@bot.on_message(filters.command("add_channel") & filters.user("7252430326"))
 async def add_channel_command(bot, message):
     if len(message.command) < 2:
         await message.reply("Usage: /add_channel <channel_id>")
@@ -76,7 +76,7 @@ async def add_channel_command(bot, message):
         await message.reply("⚠️ Channel is already added.")
 
 # Admin command: Remove channel
-@bot.on_message(filters.command("remove_channel") & filters.user("YOUR_ADMIN_ID"))
+@bot.on_message(filters.command("remove_channel") & filters.user("7252430326"))
 async def remove_channel_command(bot, message):
     if len(message.command) < 2:
         await message.reply("Usage: /remove_channel <channel_id>")
