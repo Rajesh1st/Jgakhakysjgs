@@ -14,3 +14,5 @@ services:
         value: "YOUR_BOT_TOKEN"
       - key: MONGO_URI
         value: "YOUR_MONGO_URI"
+      - key: ADMIN_ID
+        value: "YOUR_ADMIN_ID"
